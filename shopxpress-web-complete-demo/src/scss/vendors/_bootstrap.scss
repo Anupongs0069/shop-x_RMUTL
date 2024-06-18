@@ -1,0 +1,38 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+
+// Override them colors.
+// Define your custom theme colors
+$theme-colors: ("primary": #ee4d2d, // Orange Pastel
+  "secondary": #D3D3D3, // Light Gray
+  "success": #77DD77, // Light Green
+  "info": #AEC6CF, // Light Blue
+  "warning": #FFB347, // Orange Pastel
+  "danger": #FF6961, // Light Red
+  "light": #FDFD96, // Light Yellow
+  "dark": #CFCFC4 // Light Gray
+);
+
+// Optionally, override other Bootstrap variables as needed
+$body-bg: #f0f2f5;
+$body-color: #333;
+
+// Override Bootstrap variables
+$primary: #ffffff !important;
+
+// Custom Navbar background color
+.navbar-pastel-orange {
+  background-color: #ee4d2d; // Orange Pastel
+}
+
+.carousel-image {
+  max-height: 300px;
+  /* Adjust this value to your desired max height */
+  object-fit: contain;
+  /* Ensures the image covers the container while maintaining aspect ratio */
+  object-position: center;
+  /* Centers the image within the container */
+  width: 100%;
+}
+
+@import '~bootstrap/scss/bootstrap';
